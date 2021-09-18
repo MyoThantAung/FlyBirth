@@ -1,0 +1,71 @@
+<html>
+	<head>
+	<title>
+	FlyBird
+	</title>
+		
+	<style>
+		
+		body{
+			margin: auto;
+			border: 0;
+			background-color: white;
+		}
+		#head{
+			background-color: black;
+			text-align: center;
+			padding: 10px;
+		}
+		#title{
+			color: white;
+		}
+		#btn{
+			background-color: black;
+			color: white;
+			position: absolute;
+			padding: 10px;
+			margin-left: 100px;
+			cursor: default;
+		}
+		#btn:hover{
+			background-color: gray;
+		}
+		
+		</style>	
+	</head>
+
+	
+<body>
+	
+	<div id="head">
+	<span id="title">FlyBird JavaScript Game</span>
+	</div>
+	
+		<table>
+	<tr>
+		<td><img src="image/menu2.png"></td>
+		<td><img src="image/menu3.png" width="350"><p id="btn" onclick="start()">Start Game</p></td>
+		<td><img src="image/menu.png"></td>
+		</tr>
+	
+	</table>
+	
+	
+	<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId            : '235696874214166',
+      autoLogAppEvents : true,
+      xfbml            : true,
+      version          : 'v6.0'
+    });
+  };
+
+	function start(){
+		window.open("FlyBird.html","","width=910,height=560");
+	}
+	</script>
+	<script async defer src="https://connect.facebook.net/en_US/sdk.js"></script>
+	
+	</body>
+</html>
